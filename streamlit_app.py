@@ -17,3 +17,14 @@ if fichero is not None:
   gris = original.convert('LA')
   col2.header("Escala de grises")
   col2.image(gris, use_column_width=True)
+
+st.divider()
+st.title("Tabla de gastos")
+
+conceptos = ['luz','agua','comunidad','teléfono']
+importes = [100,20,50,60]
+
+for c in conceptos
+  cols = st.columns(2)
+  cols[0].write(c)
+  cols[1].write(importes[c.index])
