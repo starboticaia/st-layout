@@ -19,12 +19,8 @@ if fichero is not None:
   col2.image(gris, use_column_width=True)
 
 st.divider()
-st.title("Tabla de gastos")
 
-conceptos = ['luz','agua','comunidad','teléfono']
-importes = [100,20,50,60]
-
-for c in conceptos:
+for p in img_array:
   cols = st.columns(2)
-  cols[0].write(c)
-  cols[1].write(importes[importes.index(c)])
+  cols[0].write(p)
+  #cols[1].write(importes[importes.index(c)])
