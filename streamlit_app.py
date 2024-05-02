@@ -18,9 +18,9 @@ if fichero is not None:
   col2.header("Escala de grises")
   col2.image(gris, use_column_width=True)
 
-st.divider()
-
-for p in img_array:
-  cols = st.columns(2)
-  cols[0].write(p)
+  st.divider()
+  
+  for p in img_array:
+    cols = st.columns(2)
+    cols[0].write(p)
   #cols[1].write(importes[importes.index(c)])
