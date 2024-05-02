@@ -2,7 +2,7 @@ import streamlit as st
 import numpy as np
 from PIL import Image
 
-fichero = st.file_uploader("Upload an image", type=["png", "jpg", "jpeg"])
+fichero = st.file_uploader("Subir imagen", type=["png", "jpg", "jpeg"])
 rotada = None
 angulo = st.slider('ángulo',0,360,0)
   
@@ -17,7 +17,7 @@ if fichero is not None:
   col1.image(original, use_column_width=True)
   
   gris = original.convert('LA')
-  col2.header("Escala de grises")
+  col2.header("Grises")
   col2.image(gris, use_column_width=True)
 
   rotada = original.rotate(angulo)
