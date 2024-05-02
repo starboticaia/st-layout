@@ -4,7 +4,7 @@ from PIL import Image
 
 fichero = st.file_uploader("Upload an image", type=["png", "jpg", "jpeg"])
 rotada = None
-angulo = st.slider('ángulo',0,360)
+angulo = st.slider('ángulo',0,360,0)
   
 
 if fichero is not None:
