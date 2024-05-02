@@ -19,5 +19,6 @@ if fichero is not None:
 
   st.divider()
   #ancho, alto = img_array.size
-  angulo = st.slider(0,360)
+  angulo = st.slider('ángulo',0,360)
+  original = original.rotate(angulo)
   
