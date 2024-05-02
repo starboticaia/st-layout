@@ -24,7 +24,7 @@ st.title("Tabla de gastos")
 conceptos = ['luz','agua','comunidad','teléfono']
 importes = [100,20,50,60]
 
-for c in conceptos
+for c in conceptos:
   cols = st.columns(2)
   cols[0].write(c)
   cols[1].write(importes[c.index])
